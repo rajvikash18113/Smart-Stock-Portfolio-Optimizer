@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Portfolio Optimization (Knapsack Problem)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Stock Portfolio Optimization</h1>
+
+    <!-- Stock Inputs -->
+    <div class="input-group">
+      <label for="stock-name">Stock Name:</label>
+      <input type="text" id="stock-name" placeholder="Enter Stock Name">
+      <label for="stock-cost">Stock Cost:</label>
+      <input type="number" id="stock-cost" placeholder="Enter the Cost of the Stock">  
+      <label for="stock-return">Expected Return:</label>
+      <input type="number" id="stock-return" placeholder="Enter the Return Value of the Stock">
+      <button onclick="addStock()">Add Stock</button>
+    </div>
+
+    <!-- Stock List -->
+    <h3>Stock List:</h3>
+    <table id="stock-list">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Cost</th>
+          <th>Return</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Budget Input -->
+    <div class="input-group">
+      <label for="budget">Enter Budget:</label>
+      <input type="number" id="budget" placeholder="Enter Budget">
+    </div>
+
+    <!-- Calculate Button -->
+    <button onclick="calculatePortfolio()">Calculate Portfolio</button>
+
+    <!-- Result -->
+    <div id="result"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
