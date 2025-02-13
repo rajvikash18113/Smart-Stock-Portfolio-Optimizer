@@ -12,7 +12,7 @@ void KnapSack(int capacity, int n, Item items[])
     for (int i = 0; i <= n; i++)
     {
         for (int w = 0; w <= capacity; w++)
-        {
+        {                                                                                                  
             if (i == 0 || w == 0)
             {
                 matrix[i][w] = 0;
